@@ -56,7 +56,7 @@ function ContactPage() {
     <>
       <PageMeta
         title="Contact Us"
-        description="Contact Zanzibar Excursion Company Ltd for bookings, travel guidance, and personalised Zanzibar trip planning."
+        description="Contact Ajmeyl Tours & Safaris for bookings, travel guidance, and personalised Zanzibar trip planning."
       />
 
       <section className="contact-hero" style={{ '--contact-hero-image': `url(${contactHero})` }}>
@@ -159,3 +159,4 @@ function ContactPage() {
 }
 
 export default ContactPage
+

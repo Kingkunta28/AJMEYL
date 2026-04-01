@@ -29,7 +29,7 @@ function AboutPage() {
     <>
       <PageMeta
         title="About Us"
-        description="Discover Zanzibar Excursion Company Ltd, our story, services, and trusted travel experience."
+        description="Discover Ajmeyl Tours & Safaris, our story, services, and trusted travel experience."
       />
 
       <section
@@ -48,9 +48,9 @@ function AboutPage() {
             <img src={aboutGridImage} alt="Zanzibar ocean experience" />
 
             <div className="about-text">
-              <h2>About Zanzibar Excursion Company Ltd</h2>
+              <h2>About Ajmeyl Tours & Safaris</h2>
               <p>
-                Zanzibar Excursion Company Ltd is a professional tourism company offering
+                Ajmeyl Tours & Safaris is a professional tourism company offering
                 thoughtfully planned travel experiences across Zanzibar and Tanzania. From
                 beach holidays to wildlife safaris, we aim to make every journey memorable.
               </p>
@@ -96,3 +96,4 @@ function AboutPage() {
 }
 
 export default AboutPage
+

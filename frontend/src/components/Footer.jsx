@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import logo from '../assets/ZANZIBAR EXCURSION COMPANY LTD copy.jpg'
+import logo from '../assets/Ajmeyl Tours & Safaris.jpg'
 import footerImage from '../assets/picha.jpeg'
 
 function Footer() {
@@ -12,8 +12,8 @@ function Footer() {
     >
       <div className="container footer__grid">
         <div>
-          <img className="footer__logo" src={logo} alt="Zanzibar Excursion Company Ltd" />
-          <p className="section-tag">Zanzibar Excursion Company Ltd</p>
+          <img className="footer__logo" src={logo} alt="Ajmeyl Tours & Safaris" />
+          <p className="section-tag">Ajmeyl Tours & Safaris</p>
           <h3>Escape into island stories, ocean air, and seamless travel.</h3>
         </div>
         <div>
@@ -35,10 +35,11 @@ function Footer() {
         </div>
       </div>
       <div className="container footer__bottom">
-        <p>(c) 2026 Zanzibar Excursion Company Ltd. Crafted for memorable journeys.</p>
+        <p>(c) 2026 Ajmeyl Tours & Safaris. Crafted for memorable journeys.</p>
       </div>
     </footer>
   )
 }
 
 export default Footer
+

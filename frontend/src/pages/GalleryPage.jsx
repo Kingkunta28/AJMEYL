@@ -39,7 +39,7 @@ function GalleryPage() {
     <>
       <PageMeta
         title="Gallery"
-        description="Explore Zanzibar Excursion Company Ltd moments through beaches, island scenery, and memorable travel experiences."
+        description="Explore Ajmeyl Tours & Safaris moments through beaches, island scenery, and memorable travel experiences."
       />
 
       <section
@@ -47,7 +47,7 @@ function GalleryPage() {
         style={{ '--gallery-hero-image': `url(${galleryHero})` }}
       >
         <div className="container gallery-page-hero__content">
-          <h1>ZANZIBAR EXCURSION COMPANY LTD GALLERY</h1>
+          <h1>AJMEYL TOURS & SAFARIS GALLERY</h1>
         </div>
       </section>
 
@@ -99,3 +99,4 @@ function GalleryPage() {
 }
 
 export default GalleryPage
+

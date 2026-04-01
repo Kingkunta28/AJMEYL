@@ -3,8 +3,8 @@ import { useEffect } from 'react'
 function PageMeta({ title, description }) {
   useEffect(() => {
     document.title = title
-      ? `${title} | Zanzibar Excursion Company Ltd`
-      : 'Zanzibar Excursion Company Ltd'
+      ? `${title} | Ajmeyl Tours & Safaris`
+      : 'Ajmeyl Tours & Safaris'
 
     const metaDescription = document.querySelector('meta[name="description"]')
     if (metaDescription && description) {
@@ -16,3 +16,4 @@ function PageMeta({ title, description }) {
 }
 
 export default PageMeta
+

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import logo from '../assets/Ajmeyl Tours & Safaris.jpg'
+import logo from '../assets/ajmeyl tours and safaris.jpg'
 import footerImage from '../assets/picha.jpeg'
 
 function Footer() {

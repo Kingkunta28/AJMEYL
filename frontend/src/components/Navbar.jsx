@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
-import logo from '../assets/Ajmeyl Tours & Safaris.jpg'
+import logo from '../assets/ajmeyl tours and safaris.jpg'
 
 const navLinks = [
   { to: '/', label: 'Home' },

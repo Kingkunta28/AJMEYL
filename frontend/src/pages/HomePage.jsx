@@ -23,8 +23,8 @@ const reasons = [
 ]
 
 const buildHomeCards = () => {
-  const excursionCards = zanzibarTours.slice(0, 3).map((tour) => ({
-    id: tour.id,
+  const excursionCards = zanzibarTours.slice(0, 4).map((tour) => ({
+    id: `excursion-${tour.id}`,
     badge: tour.type === 'half' ? 'Half-day' : 'Full-day',
     title: tour.title,
     summary: tour.summary,
@@ -34,8 +34,8 @@ const buildHomeCards = () => {
     detailUrl: `/tours/${tour.id}`,
   }))
 
-  const safariCard = safariTours.slice(0, 1).map((tour) => ({
-    id: tour.id,
+  const safariCard = safariTours.slice(0, 2).map((tour) => ({
+    id: `safari-${tour.id}`,
     badge: 'Safari',
     title: tour.title,
     summary: tour.summary,

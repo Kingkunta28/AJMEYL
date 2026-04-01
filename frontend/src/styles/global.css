@@ -1592,7 +1592,7 @@ p {
   position: relative;
   overflow: hidden;
   padding: 4rem 0 1.5rem;
-  color: #fff;
+  color: #fffdf7;
   background: none;
 }
 
@@ -1600,7 +1600,7 @@ p {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(4, 36, 46, 0.8), rgba(4, 36, 46, 0.9));
+  background: linear-gradient(180deg, rgba(10, 35, 52, 0.9), rgba(9, 30, 44, 0.96));
   pointer-events: none;
 }
 
@@ -1608,7 +1608,7 @@ p {
 .footer h4,
 .footer .section-tag,
 .footer strong {
-  color: #fff;
+  color: #fffdf7;
   font-weight: 700;
 }
 
@@ -1617,6 +1617,8 @@ p {
   grid-template-columns: 1.2fr 0.8fr 0.8fr;
   gap: 2rem;
   padding-bottom: 2rem;
+  position: relative;
+  z-index: 1;
 }
 
 .footer__logo {
@@ -1625,6 +1627,7 @@ p {
   object-fit: cover;
   border-radius: 1rem;
   margin-bottom: 1rem;
+  border: 2px solid rgba(255, 248, 231, 0.22);
 }
 
 .footer__links {
@@ -1633,18 +1636,37 @@ p {
 }
 
 .footer__links a {
-  color: rgba(255, 255, 255, 0.9);
+  color: #fffdf7;
   font-weight: 600;
+  text-decoration: none;
+  transition: color 180ms ease, opacity 180ms ease;
+}
+
+.footer__links a:hover,
+.footer__links a:focus-visible {
+  color: #f4a261;
+  opacity: 1;
 }
 
 .footer__bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.12);
   padding-top: 1.25rem;
+  position: relative;
+  z-index: 1;
 }
 
 .footer p {
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 253, 247, 0.96);
   font-weight: 500;
+}
+
+.footer .section-tag {
+  color: #f4e39a;
+}
+
+.footer h3 {
+  line-height: 1.5;
+  max-width: 24rem;
 }
 
 .tours-format-section {
@@ -1698,6 +1720,19 @@ p {
 .tour-format-cta {
   margin-top: 2.5rem;
   text-align: center;
+}
+
+.tour-format-cta .button--secondary {
+  background: linear-gradient(135deg, #7fb3c9, #2f6f8f);
+  color: #f8fcff;
+  border-color: rgba(27, 73, 101, 0.16);
+  box-shadow: 0 14px 30px rgba(27, 73, 101, 0.14);
+}
+
+.tour-format-cta .button--secondary:hover {
+  background: linear-gradient(135deg, #689db6, #255d79);
+  color: #ffffff;
+  box-shadow: 0 18px 34px rgba(27, 73, 101, 0.18);
 }
 
 .tour-format-card {
@@ -1997,4 +2032,362 @@ p {
   border-radius: 12px;
   text-decoration: none;
   font-weight: 600;
+}
+
+/* Zanzibar-inspired palette refresh */
+:root {
+  --bg: #fff8e7;
+  --bg-alt: #f4ebd0;
+  --surface: rgba(255, 253, 247, 0.94);
+  --surface-strong: #fffdf7;
+  --text: #102a3a;
+  --muted: #435c68;
+  --border: rgba(27, 73, 101, 0.18);
+  --primary: #2ec4b6;
+  --primary-dark: #1b4965;
+  --accent: #ff7f50;
+  --accent-dark: #e76f51;
+  --accent-soft: #f4a261;
+  --secondary: #2a9d8f;
+  --spice: #8b5e3c;
+  --sand: #f4ebd0;
+  --shadow: 0 22px 55px rgba(27, 73, 101, 0.14);
+  --shadow-soft: 0 12px 30px rgba(42, 157, 143, 0.12);
+  --hero-overlay: linear-gradient(135deg, rgba(27, 73, 101, 0.9), rgba(16, 101, 132, 0.66));
+  --hero-overlay-strong: linear-gradient(135deg, rgba(18, 55, 78, 0.94), rgba(24, 110, 118, 0.72));
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(46, 196, 182, 0.08), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(244, 162, 97, 0.12), transparent 28%),
+    var(--bg);
+  color: var(--text);
+}
+
+.section--accent {
+  background: linear-gradient(180deg, rgba(46, 196, 182, 0.09), rgba(42, 157, 143, 0.04));
+}
+
+.section--sand,
+.tours-format-section,
+.about-page-section,
+.contact-page-section,
+.transfers-page-section,
+.gallery-page-section,
+.tour-detail {
+  background: linear-gradient(180deg, rgba(255, 250, 239, 1), rgba(244, 235, 208, 0.68));
+}
+
+.navbar--scrolled {
+  background: rgba(96, 205, 214, 0.94);
+  box-shadow: 0 12px 34px rgba(27, 73, 101, 0.14);
+}
+
+.brand,
+.section-heading h2,
+.about-text h2,
+.about-services h2,
+.about-cta h2,
+.transfers-title-block h2,
+.transfers-booking h2,
+.contact-form-box h2,
+.contact-info-box h2,
+.gallery-page-intro h2,
+.tour-detail__content h1,
+.tour-detail__content h2,
+.tour-detail__mikumi-gallery h2,
+.tour-detail__gallery-heading h2 {
+  color: var(--primary-dark);
+}
+
+.navbar__link--active,
+.navbar__link:hover {
+  color: var(--primary-dark);
+}
+
+.navbar__link--active::after,
+.navbar__link:hover::after {
+  background: linear-gradient(90deg, var(--primary), var(--accent-soft));
+}
+
+.brand__logo,
+.footer__logo {
+  box-shadow: 0 14px 34px rgba(27, 73, 101, 0.16);
+}
+
+.button--primary,
+.tour-detail__btn,
+.tour-detail__form-btn,
+.transfers-submit-btn,
+.contact-submit-btn,
+.about-cta__button,
+.tour-detail__more-btn,
+.tour-format-card__footer a {
+  background: linear-gradient(135deg, var(--accent), var(--accent-soft));
+  color: #fff;
+  box-shadow: 0 16px 34px rgba(255, 127, 80, 0.28);
+}
+
+.button--primary:hover,
+.tour-detail__btn:hover,
+.tour-detail__form-btn:hover,
+.transfers-submit-btn:hover,
+.contact-submit-btn:hover,
+.about-cta__button:hover,
+.tour-detail__more-btn:hover,
+.tour-format-card__footer a:hover {
+  background: linear-gradient(135deg, var(--accent-dark), #eb8d54);
+  box-shadow: 0 20px 40px rgba(231, 111, 81, 0.32);
+}
+
+.button--secondary {
+  background: rgba(255, 248, 231, 0.14);
+  color: #fff;
+  border-color: rgba(255, 248, 231, 0.5);
+}
+
+.text-link,
+.tour-card__price,
+.tour-card__meta,
+.info-card__meta,
+.tour-detail__price,
+.form-success {
+  color: var(--accent);
+}
+
+.tour-booking__summary h2,
+.section-tag,
+.tour-detail__booking-subtext,
+.contact-form-box h2,
+.about-service-card h3,
+.transfers-service-card h3,
+.transfers-vehicle-card__info h3 {
+  color: var(--primary-dark);
+}
+
+.hero::before,
+.page-hero::before,
+.page-hero--about::before,
+.page-hero--contact::before {
+  background:
+    var(--hero-overlay),
+    url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1800&q=80')
+      center/cover;
+}
+
+.hero--home::before {
+  background: var(--hero-overlay), var(--home-hero-image) center/cover;
+}
+
+.about-hero::before {
+  background:
+    var(--hero-overlay-strong),
+    var(
+      --about-hero-image,
+      url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=80')
+    )
+      center/cover;
+}
+
+.contact-hero::before {
+  background:
+    var(--hero-overlay-strong),
+    var(
+      --contact-hero-image,
+      url('https://images.unsplash.com/photo-1518546305927-5a555bb7020d?auto=format&fit=crop&w=1800&q=80')
+    )
+      center/cover;
+}
+
+.gallery-page-hero::before {
+  background:
+    var(--hero-overlay),
+    var(
+      --gallery-hero-image,
+      url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1800&q=80')
+    )
+      center/cover;
+}
+
+.transfers-hero::before {
+  background:
+    var(--hero-overlay),
+    var(
+      --transfers-hero-image,
+      url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1800&q=80')
+    )
+      center/cover;
+}
+
+.tour-card,
+.info-card,
+.team-card,
+.testimonial-card,
+.form-card,
+.feature-panel,
+.tour-detail__content,
+.tour-detail__booking,
+.tour-booking__card,
+.tour-detail__gallery,
+.tour-detail__mikumi-gallery,
+.tour-detail__more-card,
+.tour-filter-shell,
+.transfers-service-card,
+.transfers-vehicle-card,
+.transfers-booking,
+.contact-form-box,
+.contact-map-box,
+.about-service-card,
+.about-stat {
+  background: var(--surface-strong);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.info-card__icon {
+  background: rgba(46, 196, 182, 0.16);
+  color: var(--primary-dark);
+}
+
+.feature-panel,
+.tour-booking__summary,
+.tour-detail__confirmation {
+  background: linear-gradient(180deg, rgba(46, 196, 182, 0.08), rgba(255, 253, 247, 0.98));
+  border: 1px solid rgba(27, 73, 101, 0.14);
+}
+
+.tour-detail__info-bar {
+  background: linear-gradient(180deg, rgba(255, 253, 247, 1), rgba(244, 235, 208, 0.9));
+  border: 1px solid rgba(27, 73, 101, 0.12);
+  box-shadow: var(--shadow-soft);
+}
+
+.tour-detail__note {
+  background: rgba(244, 162, 97, 0.16);
+  color: #6f4627;
+}
+
+.tour-chip {
+  background: rgba(46, 196, 182, 0.1);
+  color: var(--primary-dark);
+  border: 1px solid rgba(46, 196, 182, 0.18);
+}
+
+.tour-chip:hover,
+.tour-chip--active {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: #fff;
+}
+
+.contact-info-box,
+.footer::before {
+  background: linear-gradient(180deg, rgba(77, 201, 210, 0.96), rgba(30, 150, 173, 0.96));
+}
+
+.footer {
+  color: #f4fbff;
+}
+
+.footer__bottom {
+  border-top: 1px solid rgba(255, 248, 231, 0.18);
+}
+
+.footer__links a,
+.footer p,
+.contact-info-item strong,
+.contact-info-item p {
+  color: rgba(244, 251, 255, 0.96);
+}
+
+.hero__content,
+.page-hero__content,
+.about-hero__content,
+.contact-hero__content,
+.gallery-page-hero__content,
+.transfers-hero__content,
+.hero h1,
+.page-hero h1,
+.about-hero h1,
+.contact-hero h1,
+.gallery-page-hero h1,
+.transfers-hero h1,
+.hero p,
+.page-hero p,
+.about-hero p,
+.contact-hero p,
+.gallery-page-hero p,
+.transfers-hero p {
+  color: #fffdf7;
+  text-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+}
+
+.tour-card__content p,
+.info-card p,
+.testimonial-card p,
+.feature-panel p,
+.about-text p,
+.about-service-card p,
+.contact-form-group label,
+.contact-info-item,
+.transfers-service-card p,
+.transfers-vehicle-card__info p,
+.tour-detail__content p,
+.tour-detail__booking-row,
+.tour-booking__summary-row {
+  color: var(--text);
+}
+
+.contact-form-group input,
+.contact-form-group textarea,
+.transfers-form-group input,
+.transfers-form-group select,
+.transfers-form-group textarea,
+.tour-detail__form input,
+.tour-detail__form textarea,
+.form-card input,
+.form-card textarea {
+  background: #fffdf7;
+  border: 1px solid rgba(27, 73, 101, 0.14);
+}
+
+.contact-form-group input:focus,
+.contact-form-group textarea:focus,
+.transfers-form-group input:focus,
+.transfers-form-group select:focus,
+.transfers-form-group textarea:focus,
+.tour-detail__form input:focus,
+.tour-detail__form textarea:focus,
+.form-card input:focus,
+.form-card textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(46, 196, 182, 0.14);
+  outline: none;
+}
+
+.gallery-page-grid__item,
+.tour-detail__gallery-item,
+.tour-detail__gallery-link {
+  box-shadow: var(--shadow-soft);
+}
+
+.gallery-page-grid__item:hover,
+.gallery-page-grid__item:focus-visible,
+.about-service-card:hover,
+.transfers-service-card:hover,
+.transfers-vehicle-card:hover {
+  box-shadow: 0 18px 40px rgba(27, 73, 101, 0.18);
+}
+
+.gallery-modal__nav,
+.gallery-modal__close {
+  background: rgba(27, 73, 101, 0.82);
+  color: #fff;
+}
+
+.gallery-modal__nav:hover,
+.gallery-modal__nav:focus-visible,
+.gallery-modal__close:hover,
+.gallery-modal__close:focus-visible {
+  background: rgba(255, 127, 80, 0.92);
 }

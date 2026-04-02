@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import logo from '../assets/ajmeyl tours and safaris.jpg'
+import logo from '../assets/LOGO.jpeg'
 import footerImage from '../assets/picha.jpeg'
 
 function Footer() {
@@ -29,9 +29,9 @@ function Footer() {
         </div>
         <div>
           <h4>Contact</h4>
-          <p>Stone Town, Zanzibar</p>
-          <p>+255 777 123 456</p>
-          <p>hello@zanzibarexcursion.com</p>
+          <p>The kira street & forodhan old fort, Zanzibar - Tanzania</p>
+          <p>+255 612 708 430</p>
+          <p>ajmeylal@gmail.com</p>
         </div>
       </div>
       <div className="container footer__bottom">

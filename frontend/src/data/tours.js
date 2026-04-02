@@ -532,6 +532,106 @@ export const testimonials = [
     quote:
       'The balance of luxury and local authenticity was exactly what we hoped for. We would book again instantly.',
   },
+  {
+    name: 'James T.',
+    quote:
+      'From our airport pickup to the final beach tour, everything was handled with care and perfect timing.',
+  },
+  {
+    name: 'Mariam H.',
+    quote:
+      'The team helped us plan our Zanzibar days so well. We felt relaxed, informed, and genuinely welcomed.',
+  },
+  {
+    name: 'Grace W.',
+    quote:
+      'Excellent communication before arrival and even better service once we landed. The transfer was seamless.',
+  },
+  {
+    name: 'Peter L.',
+    quote:
+      'Our guide was friendly, knowledgeable, and patient. The Stone Town tour was one of our trip highlights.',
+  },
+  {
+    name: 'Nadia S.',
+    quote:
+      'Booking was easy, the response was fast, and every excursion felt well organised from start to finish.',
+  },
+  {
+    name: 'Kelvin J.',
+    quote:
+      'We loved how flexible everything was. They adjusted the schedule for our family without any stress.',
+  },
+  {
+    name: 'Fatma A.',
+    quote:
+      'Professional drivers, clean transport, and wonderful tour experiences. We felt safe and comfortable throughout.',
+  },
+  {
+    name: 'Leo B.',
+    quote:
+      'The snorkeling tour was amazing and the coordination was even better. We always knew where to be and when.',
+  },
+  {
+    name: 'Irene P.',
+    quote:
+      'Ajmeyl Tours made our honeymoon feel special with thoughtful details and kind, responsive support.',
+  },
+  {
+    name: 'Noah C.',
+    quote:
+      'Very reliable service. They were on time for every pickup and made our multi-day safari easy to manage.',
+  },
+  {
+    name: 'Halima R.',
+    quote:
+      'The mix of local insight and warm hospitality made a big difference. We learned so much while having fun.',
+  },
+  {
+    name: 'Eric D.',
+    quote:
+      'Our transfer and excursion package was excellent value. Everything felt polished and professionally arranged.',
+  },
+  {
+    name: 'Joy N.',
+    quote:
+      'The dolphin and snorkeling trip was unforgettable. The whole experience felt smooth, safe, and exciting.',
+  },
+  {
+    name: 'Samir K.',
+    quote:
+      'Quick replies, honest recommendations, and no confusion at all. It made planning our holiday much easier.',
+  },
+  {
+    name: 'Rebecca O.',
+    quote:
+      'We appreciated how easy it was to book several experiences in one place. The team was dependable every day.',
+  },
+  {
+    name: 'Ali M.',
+    quote:
+      'Fantastic service with a personal touch. They treated us like guests, not just customers, and that stood out.',
+  },
+  {
+    name: 'Clara V.',
+    quote:
+      'The safari booking from Zanzibar was handled beautifully. We did not have to worry about a single detail.',
+  },
+  {
+    name: 'Yusuf E.',
+    quote:
+      'Clear communication, fair pricing, and memorable tours. I would confidently recommend them to other travellers.',
+  },
+  {
+    name: 'Helen G.',
+    quote:
+      'Our family trip ran smoothly because the transfers and tours were coordinated so well. Truly stress-free.',
+  },
+  {
+    name: 'Omar F.',
+    quote:
+      'Every guide we met was professional and welcoming. The service felt consistent and trustworthy throughout.',
+  },
 ]
 
 export const team = [

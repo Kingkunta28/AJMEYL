@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Button from '../components/Button'
 import PageMeta from '../components/PageMeta'
@@ -50,6 +50,36 @@ const buildHomeCards = () => {
 
 function HomePage() {
   const homeTourCards = useMemo(buildHomeCards, [])
+  const [activeTestimonialIndex, setActiveTestimonialIndex] = useState(0)
+  const [isTestimonialVisible, setIsTestimonialVisible] = useState(true)
+
+  useEffect(() => {
+    if (testimonials.length < 2) {
+      return undefined
+    }
+
+    const intervalId = window.setInterval(() => {
+      setIsTestimonialVisible(false)
+
+      window.setTimeout(() => {
+        setActiveTestimonialIndex((currentIndex) => {
+          let nextIndex = currentIndex
+
+          while (nextIndex === currentIndex) {
+            nextIndex = Math.floor(Math.random() * testimonials.length)
+          }
+
+          return nextIndex
+        })
+        setIsTestimonialVisible(true)
+      }, 1000)
+    }, 7000)
+
+    return () => window.clearInterval(intervalId)
+  }, [])
+
+  const activeTestimonial = testimonials[activeTestimonialIndex]
+
   return (
     <>
       <PageMeta
@@ -153,13 +183,16 @@ function HomePage() {
             title="What guests value most about travelling with us"
             align="center"
           />
-          <div className="grid grid--three">
-            {testimonials.map((item) => (
-              <article className="testimonial-card" key={item.name}>
-                <p>"{item.quote}"</p>
-                <strong>{item.name}</strong>
-              </article>
-            ))}
+          <div className="testimonial-stage">
+            <article
+              className={`testimonial-card testimonial-card--spotlight ${
+                isTestimonialVisible ? 'testimonial-card--visible' : 'testimonial-card--hidden'
+              }`}
+              key={activeTestimonial.name}
+            >
+              <p>"{activeTestimonial.quote}"</p>
+              <strong>{activeTestimonial.name}</strong>
+            </article>
           </div>
         </div>
       </section>

@@ -124,17 +124,17 @@ function ContactPage() {
 
               <div className="contact-info-item">
                 <strong>Phone:</strong>
-                <p>+255 700 000 000</p>
+                <p>+255 612 708 430</p>
               </div>
 
               <div className="contact-info-item">
                 <strong>Email:</strong>
-                <p>booking@yazantours.co.tz</p>
+                <p>ajmeylal@gmail.com</p>
               </div>
 
               <div className="contact-info-item">
                 <strong>Location:</strong>
-                <p>Zanzibar, Tanzania</p>
+                <p>The kira street & forodhan old fort, Zanzibar - Tanzania</p>
               </div>
 
               <div className="contact-info-item">
